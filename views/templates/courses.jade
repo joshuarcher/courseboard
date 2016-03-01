@@ -1,0 +1,9 @@
+h1 Courses offered at Make School
+.row
+    div(ng-repeat='course in courses')
+        h4 {{course.title}}
+        p Teacher: {{course.teacher}}
+        p Description: {{course.description}}
+        p Credits: {{course.credits}}
+        p Duration: {{course.duration}}
+        br
