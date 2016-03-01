@@ -1,4 +1,11 @@
-h1 Courses offered at Make School
+center
+    h1 Courses offered at Make School 
+br
+div
+    center 
+        input#courseSearch(type='search', placeholder='Search')
+        button.search Search
+br
 .row
     div(ng-repeat='course in courses')
         h4 {{course.title}}
@@ -6,4 +13,6 @@ h1 Courses offered at Make School
         p Description: {{course.description}}
         p Credits: {{course.credits}}
         p Duration: {{course.duration}}
+        button.signup Sign Up
+        br
         br
